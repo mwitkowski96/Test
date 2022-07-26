@@ -1,3 +1,4 @@
+@import './portfolio';
 @import './colors';
 @import './components';
 @import './mixins';
@@ -33,7 +34,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 1001;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.985);
     box-shadow: 0px 4px 10px 10px rgba(117, 114, 114, 0.25);
 }
 
@@ -105,13 +106,15 @@ body {
 
 .burger-btn.open .burger-btn__bars::after {
     transform: rotate(45deg);
-    background-color: white;
+    background-color: #5b5b5b;
+
 
 }
 
 .burger-btn.open .burger-btn__bars::before {
     transform: rotate(-45deg) translate(10px, -10px);
-    background-color: white;
+    background-color: #5b5b5b;
+
 
 
 }
@@ -156,17 +159,12 @@ body {
         padding: 0.5em 2em;
         text-decoration: none;
         z-index: 101;
+    }
 
+    &__items {
+        position: absolute;
+        top: 25%;
 
-        // &::before { // linie pionowe
-        //     content: '';
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     width: 3px;
-        //     height: 100%;
-        //     background-color: white;
-        // }
     }
 
     &--active {
@@ -193,6 +191,7 @@ body {
 
 .nav-desktop {
     display: none;
+
 }
 
 //HEADER
@@ -541,7 +540,8 @@ body {
         display: flex;
         align-items: center;
         width: 100%;
-        background: rgba(255, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.985);
+
         box-shadow: 0px 4px 10px 10px rgba(117, 114, 114, 0.25);
         z-index: 1000000;
 

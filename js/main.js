@@ -3,7 +3,6 @@ const navBtn = document.querySelector('.burger-btn');
 const allNavItems = document.querySelectorAll('.nav-mobile__item')
 const addText = document.querySelector('.section-text-more')
 const moreBtn = document.querySelector('.btn-section')
-const footerYear = document.querySelector('.footer__year')
 
 let moreText = true;
 
@@ -26,21 +25,21 @@ moreBtn.addEventListener('click', () => {
 })
 
 
-const handleNav = () => {
-    nav.classList.toggle('nav-mobile--active')
-    navBtn.classList.toggle('open')
+// const handleNav = () => {
+//     nav.classList.toggle('nav-mobile--active')
+//     navBtn.classList.toggle('open')
 
 
-    allNavItems.forEach(item => {
-        item.addEventListener('click', () => {
-            nav.classList.remove('nav-mobile--active')
-            navBtn.classList.remove('open')
+//     allNavItems.forEach(item => {
+//         item.addEventListener('click', () => {
+//             nav.classList.remove('nav-mobile--active')
+//             navBtn.classList.remove('open')
 
-        })
-    })
+//         })
+//     })
 
-    handleNavItemsAnimation();
-}
+//     handleNavItemsAnimation();
+// }
 
 const handleNavItemsAnimation = () => {
     let delayTime = 0;

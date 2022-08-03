@@ -14,9 +14,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700&display=swap"
         rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <title>DN Architektuta wnętrz Portfolio</title>
+    <title>DN Architektuta wnętrz Kontakt</title>
 </head>
 
 <body>
@@ -28,7 +30,7 @@
                 <a href="/index.html" class="nav-mobile__item">O nas</a>
                 <a href="./portfolio.html" class="nav-mobile__item">Portfolio</a>
                 <a href="#" class="nav-mobile__item">Oferta</a>
-                <a href="./contact.html" class="nav-mobile__item">Kontakt</a>
+                <a href="#" class="nav-mobile__item">Kontakt</a>
             </div>
         </div>
         <div class="wrapper wrapper--flex">
@@ -74,37 +76,58 @@
 
     <!-- MAIN -->
     <main class="main">
-        <section class="portfolio section">
-            <div class="wrapper">
-                <h2 class="section-heading">Portfolio</h2>
-                <div class="line-horizontal"></div>
-                <h3 class="section-subheading">Aranżacje wnętrz</h3>
+        <section class="contact section">
+
+            <div class="wrapper contactus">
+
+                <div class="contactus-header">
+                    <h2 class="section-heading">Kontakt</h2>
+                    <div class="line-horizontal line--white"></div>
+                    <h3 class="section-subheading">Skontaktuj się z nami</h3>
+
+
+                    <div class="architect-boxes">
+
+                        <div class="architect-box">
+                            <h2 class="architect__name">Dagmara Urbanowicz</h2>
+                            <div class="architect-details">
+                                <i class="fa-solid fa-phone"></i> <span class="number">
+                                    +48 667 709 982
+                                </span>
+                            </div>
+                            <div class="line-horizontal line--white"></div>
+                        </div>
+                        <div class="architect-box">
+                            <h2 class="architect__name">Nikola Kleszczewska</h2>
+                            <div class="architect-details">
+                                <i class="fa-solid fa-phone"></i> <span class="number">
+                                    +48 667 709 982
+                                </span>
+                            </div>
+                            <div class="line-horizontal line--white"></div>
+                        </div>
+
+                        <div class="emailus">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span class="email">biuro@dnarchitekturawnetrz.pl</span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="email-form-box">
+                    <h2 class="section-heading">formularz kontaktowy</h2>
+                    <div class="line-horizontal line--white"></div>
+                    <form class="direct-form" autocomplete="on">
+                        <input type="text" id="fname" name="fname" placeholder="Imię:">
+                        <input type="text" id="fname" name="fname" placeholder="Adres mailowy:" required>
+                        <textarea rows=" 4" cols="50" placeholder="Tu wpisz treść Twojej wiadomości"></textarea>
+                        <input class="submit-button" type="submit" value="Wyślij">
+                    </form>
+                </div>
             </div>
-
-
-
-            <ul class="gallery">
-                <li class="thumbnail"><img tabindex='0' src="img/images/1.png" alt=""></li>
-                <li class="thumbnail"><img tabindex='0' src="img/images/2.png" alt=""></li>
-                <li class="thumbnail"><img tabindex='0' src="img/images/3.png" alt=""></li>
-                <li class="thumbnail"><img tabindex='0' src="img/images/4.png" alt=""></li>
-                <li class="thumbnail"><img tabindex='0' src="img/images/5.png" alt=""></li>
-                <li class="thumbnail"><img tabindex='0' src="img/images/6.png" alt=""></li>
-                <li class="thumbnail"><img tabindex='0' src="img/images/7.png" alt=""></li>
-                <li class="thumbnail"><img tabindex='0' src="img/images/8.png" alt=""></li>
-                <li class="thumbnail"><img tabindex='0' src="img/images/9.png" alt=""></li>
-                <li class="thumbnail"><img tabindex='0' src="img/images/10.png" alt=""></li>
-            </ul>
-
-            
-            <div class="popup hidden">
-                <button aria-label="Zamknij popup" class="popup__close">X</button>
-                <img src="" alt="" class="popup__img">
-                <button aria-label='Poprzednie zdjęcie' class="popup__arrow popup__arrow--left">&lt;</button>
-                <button aria-label='Następne zdjęcie' class="popup__arrow popup__arrow--right">&gt;</button>
-            </div>
-
-
+        </section>
 
 
 
@@ -135,7 +158,6 @@
 
     <!-- END FOOTER -->
     <script src="js/nav.js"></script>
-    <script src="js/slider.js"></script>
     <script src="js/footer.js"></script>
 
 </body>
